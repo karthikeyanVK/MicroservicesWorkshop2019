@@ -1,0 +1,29 @@
+<div class="form-group">
+  <table>
+
+    <th>
+      <label for="productName">Product</label>
+    </th>
+    <th>
+      <label for="Quantity">Available Quantity</label>
+    </th>
+    <th>
+      <label for="Quantity">Order Quantity</label>
+    </th>
+
+    <tr *ngFor="let order of orders">
+      <td>
+        <label for="productName">Product: {{order.ProductName}}</label>
+      </td>
+
+      <td>
+        <label class="form-control"> {{order.AvailableQuantity}}</label>
+      </td>
+      <td>
+        <input [(ngModel)]="order.Quantity" type="text" class="form-control">
+      </td>
+      <td>
+        <button type="button" (click)="orderProduct(order);" class="btn btn-default">Submit</button>
+      </td>
+    </tr>
+  </table>
