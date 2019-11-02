@@ -4,8 +4,10 @@
 
 export const environment = {
   production: false,
-  orderServiceUrl:'https://petshopapi.azurewebsites.net',
-  productServiceUrl:'https://petshopapi.azurewebsites.net'
+   // orderServiceUrl:'http://localhost:7072/',
+  // productServiceUrl:'http://localhost:7071/'
+  orderServiceUrl:'',
+  productServiceUrl:''
 };
 
 /*
