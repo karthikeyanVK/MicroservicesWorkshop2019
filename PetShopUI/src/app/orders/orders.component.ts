@@ -14,7 +14,7 @@ export class OrdersComponent implements OnInit {
 
   constructor(private productService: ProductService, private orderService: OrderService) { }
   private result: boolean;
-  private orders: Order[];
+  public orders: Order[];
   ngOnInit() {
     this.getProducts();
   }
