@@ -1,4 +1,3 @@
-"# MicroservicesWorkshop2019" 
 
 Welcome to the Microservices Workshop 2019 
 
