@@ -42,7 +42,7 @@ namespace PetShop.Business
                 ProductName = product.ProductName,
                 Quantity = product.AvailableQuantity
             };
-
+            Console.WriteLine("Inside Add products");
             using (var context = new PetShopContext())
             {
                 context.Products.Add(dbProduct);

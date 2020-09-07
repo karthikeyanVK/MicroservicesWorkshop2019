@@ -29,8 +29,8 @@ namespace PetShop.API
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2).AddJsonOptions(options =>
-                options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+            //services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2).AddJsonOptions(options =>
+            //    options.SerializerSettings.ContractResolver = new DefaultContractResolver());
             
             services.AddDbContext<PetShopContext>();
             services.AddSwaggerGen(c =>
